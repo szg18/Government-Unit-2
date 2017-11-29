@@ -31,8 +31,34 @@ li a {
 li a:hover {
 	background-color: #111;
 }
+p {
+	display: inline-block;
+	margin-right: 10px;
+}
+button {
+	display: inline-block;
+}
+span {
+	display: none;
+}
 </style>
 <script>
+function definition1(){
+		var x = document.getElementById("word1");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition2(){
+		var x = document.getElementById("word2");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
 </script>
 </head>
 <body>
@@ -49,16 +75,16 @@ li a:hover {
 </nav>
 <h2>How does informed citizenship support democratic government?</h2>
 <div class="vocab">
-	<div class="word1">
-		<p id="word">13th, 14th, and 15th Reconstruction Amendment</p>
-		<span>13th Amendment - Bans slavery in U.S. states and territories.
+	<div class="word1"><button onclick="definition1()">Show/Hide Definition</button><br><br>
+		<p>13th, 14th, and 15th Reconstruction Amendment</p>
+		<span id="word1">13th Amendment - Bans slavery in U.S. states and territories.
 		14th Amendment - Defines citizenship and grants equal protection under
 		the law for all citizens. 15th Amendment - Gives citizens the right to
 		vote regardless of race, color or previous condition of servitude.</span>
-	</div>
+	</div><br><br>
 	<div class="word2">
-		<p id="word">Impartiality of Justices</p>
-		<span>Impartiality is a principle of justice holding that decisions
+		<p>Impartiality of Justices</p><button onclick="definition2()">Show/Hide Definition</button><br><br>
+		<span id="word2">Impartiality is a principle of justice holding that decisions
 		should be based on objective criteria, rather than on the basis of bias,
 		prejudice, or preferring the benefit to one person over another for
 		improper reasons.</span>
