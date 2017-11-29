@@ -31,12 +31,34 @@ li a {
 li a:hover {
 	background-color: #111;
 }
-#vocab {
-            position: relative;
-            float: default;
+p {
+	display: inline-block;
+	margin-right: 10px;
+}
+button {
+	display: inline-block;
+}
+span {
+	display: none;
 }
 </style>
 <script>
+function definition1(){
+		var x = document.getElementById("word1");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition2(){
+		var x = document.getElementById("word2");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
 </script>
 </head>
 <body>
@@ -54,18 +76,18 @@ li a:hover {
 <h2>Do we pay too much or too little of our income in taxes?</h2>
 <div class="vocab">
 	<div class="word1">
-		<p id="word"><Reasons for Taxes</p>
-		<span>Governments rely on taxation (income, property, and sales)
+		<p><Reasons for Taxes</p><button onclick="definition1()">Show/Hide Definition</button><br><br>
+		<span id="word1">Governments rely on taxation (income, property, and sales)
 		as a major source of revenue. Public policy influences and regulates
 		financial incentives (buying a home) and disincentives
 		(spending retirement savings before retirement age)</span>
-	</div>
+	</div><br><br>
 	<div class="word2">
-		<p id="word">Gideon v. Wainwright - 1964</p>
-		<span>The Supreme Court ruled that the Constitution requires
+		<p>Gideon v. Wainwright - 1964</p><button onclick="definition2()">Show/Hide Definition</button><br><br>
+		<spanid="word2">The Supreme Court ruled that the Constitution requires
 		the states to provide defense attorneys to criminal defendants charged
 		with serious offenses who cannot afford lawyers themselves.</span>
-	</div>
+	</div><br><br>
 </div>
 </body>
 </html>
