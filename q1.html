@@ -11,7 +11,7 @@ html, body {
 }
 div {
 	column-count: 3;
-	column-gap: 25px;
+	column-gap: 50px;
 	column-width: 350px;
 }
 ul {
@@ -38,25 +38,38 @@ li a {
 li a:hover {
 	background-color: #111;
 }
-.vocab .hover {
-	position: absolute;
-	display: none;
-	z-index: 10;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-        }
-.vocab:hover .hover {
-	display: block;
-        }
+.image1 {
+	background-image: url('https://i.imgur.com/FWcAXFB.png');
+	}
+.image1:hover {
+	background-image: url('https://i.imgur.com/n7af9sn.png'), url('https://i.imgur.com/FWcAXFB.png');
+.image2 {
+	background-image: url('https://i.imgur.com/zr0ZmF5.png');
+	}
+.image2:hover {
+	background-image: url('https://i.imgur.com/GWz6fMp.png'), url('https://i.imgur.com/zr0ZmF5.png');
+.image3 {
+	background-image: url('https://i.imgur.com/edI5gFF.png');
+	}
+.image3:hover {
+	background-image: url('https://i.imgur.com/dar47XB.png'), url('https://i.imgur.com/edI5gFF.png');
+.image4 {
+	background-image: url('https://i.imgur.com/LthnBcx.png');
+	}
+.image4:hover {
+	background-image: url('https://i.imgur.com/5iVvKen.png'), url('https://i.imgur.com/LthnBcx.png');
+.image5 {
+	background-image: url('https://i.imgur.com/g6wV2qc.png');
+	}
+.image5:hover {
+	background-image: url('https://i.imgur.com/FnkpRIR.png'), url ('https://i.imgur.com/g6wV2qc.png')
+	}
 img {
 	position: relative;
 	width: 250px;
 	height: 150px;
 	overflow: hidden;
-	}
-	
+	}	
 </style>
 <script>
 </script>
@@ -75,20 +88,11 @@ img {
 </nav>
 <h2>What are the differences among rights, freedoms, and liberties? What is an example of a debate in U.S. history that defines each concept?</h2>
 <div class="vocab">
-<div class="image">
-	<img src="https://i.imgur.com/FWcAXFB.png">
-	<img src="gov unit2 1.2.png">
-	<img src="gov unit2 1.3.png">
-	<img src="gov unit2 1.4.png">
-	<img src="gov unit2 1.5.png">
-</div>
-<div class="hover">
-	<img src="https://i.imgur.com/n7af9sn.png">
-	<img src="gov unit2 1.2.2.png">
-	<img src="gov unit2 1.3.2.png">
-	<img src="gov unit2 1.4.2.png">
-	<img src="gov unit2 1.5.2.png">
-</div>
+	<div class="image1"></div>
+	<div class="image2"></div>
+	<div class="image3"></div>
+	<div class="image4"></div>
+	<div class="image5"></div>
 </div>
 </body>
 </html>
