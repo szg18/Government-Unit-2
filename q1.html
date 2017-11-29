@@ -43,8 +43,48 @@ span {
 }
 </style>
 <script>
-	function definition(){
-		var x = document.getElementsbyTagName("span");
+	function definition1(){
+		var x = document.getElementbyId("word1");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition2(){
+		var x = document.getElementbyId("word2");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition3(){
+		var x = document.getElementbyId("word3");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition4(){
+		var x = document.getElementbyId("word4");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition5(){
+		var x = document.getElementbyId("word5");
+		if (x.style.display === "none") {
+        	x.style.display = "block";
+		} else {
+        	x.style.display = "none";
+		}
+	}
+	function definition6(){
+		var x = document.getElementbyId("word6");
 		if (x.style.display === "none") {
         	x.style.display = "block";
 		} else {
@@ -68,40 +108,40 @@ span {
 <h2>What are the differences among rights, freedoms, and liberties? What is an example of a debate in U.S. history that defines each concept?</h2>
 <div class="vocab">
 	<div class="word1">
-		<p>Inalienable Rights</p><button onclick="definition()">Show/Hide Definition</button>
-		<span>Natural Rights that are not 
+		<p>Inalienable Rights</p><button onclick="definition1()">Show/Hide Definition</button><br>
+		<span id="word1">Natural Rights that are not 
 		dependent on the laws or customs of 
 		any particular culture or government,
 		and therefore universal and inalienable.</span>
-	</div><br>
+	</div><br><br>
 	<div class="word2">
-		<p>Constitutional Rights</p><button onclick="definition()">Show/Hide Definition</button>
-		<span">A liberty or right whose protection
+		<p>Constitutional Rights</p><button onclick="definition2()">Show/Hide Definition</button><br>
+		<span id="word2">A liberty or right whose protection
 		from governmental interference is guaranteed by a constitution.</span>
 	</div>
-	<div class="word3">
-		<p>Statutory Rights</p><button onclick="definition()">Show/Hide Definition</button>
-		<span>A right granted under a statute, whether 
+	<div class="word3"><br><br>
+		<p>Statutory Rights</p><button onclick="definition3()">Show/Hide Definition</button>
+		<span id="word3">A right granted under a statute, whether 
 		federal or statute. Statutory rights means
 		relating to statutes, which are laws enacted by
 		a legislature or other governing body.</span>
 	</div>
 	<div class="word4">
-		<p>Limits on specific rights</p><button onclick="definition()">Show/Hide Definition</button>
-		<span>There are limits even for fundamental rights.
+		<p>Limits on specific rights</p><button onclick="definition4()">Show/Hide Definition</button>
+		<span id="word4">There are limits even for fundamental rights.
 		Only a handful of rights,such as the right to not
 		be tortured, is considered absolute. Limits on
 		traditional rights are recognized by law.</span>
 	</div>
 	<div class="word5">
-		<p>Equality Before the Law</p><button onclick="definition()">Show/Hide Definition</button>
-		<span">The principle that each independent human
+		<p>Equality Before the Law</p><button onclick="definition5()">Show/Hide Definition</button>
+		<span id="word5">The principle that each independent human
 		being must be treated equally by the law are
 		subject to the same laws of justice.</span>
 	</div>
 	<div class="word6">
-		<p>Due Process</p><button onclick="definition()">Show/Hide Definition</button>
-		<span>Fair treatment through the normal judicial
+		<p>Due Process</p><button onclick="definition6()">Show/Hide Definition</button>
+		<span id="word6">Fair treatment through the normal judicial
 		system, especially as a citizen’s entitlement.</span>
 	</div>
 </div>
